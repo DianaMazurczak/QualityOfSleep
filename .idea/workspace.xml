@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16f00769-d795-4d10-99d4-765031272fa9" name="Changes" comment="data preparation">
+    <list default="true" id="16f00769-d795-4d10-99d4-765031272fa9" name="Changes" comment="feature for lr">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/QualityOfSleep-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/QualityOfSleep-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QualityOfSleep.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/QualityOfSleep.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QualityOfSleep.py" beforeDir="false" afterPath="$PROJECT_DIR$/QualityOfSleep.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732476118511</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feature for lr">
+      <option name="closed" value="true" />
+      <created>1732732836817</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732732836817</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="data preparation" />
-    <option name="LAST_COMMIT_MESSAGE" value="data preparation" />
+    <MESSAGE value="feature for lr" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature for lr" />
   </component>
 </project>
