@@ -9,8 +9,7 @@ import random
 
 import statsmodels.api as sm
 from ISLP.models import (ModelSpec as MS,
- summarize,
- poly)
+ summarize)
 
 data = pd.read_csv("Sleep_health_and_lifestyle_dataset.csv")
 # C:\Users\diana\PycharmProjects\QualityOfSleep\.venv\Scripts\activate.bat
