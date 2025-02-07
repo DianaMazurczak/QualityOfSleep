@@ -2,10 +2,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from plottable import Table
+
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from matplotlib.gridspec import GridSpec
 from sklearn.model_selection import train_test_split
+from sklearn import svm
+
 import random
 
 import statsmodels.api as sm
