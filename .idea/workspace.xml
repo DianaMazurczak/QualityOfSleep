@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16f00769-d795-4d10-99d4-765031272fa9" name="Changes" comment="comparison of models" />
+    <list default="true" id="16f00769-d795-4d10-99d4-765031272fa9" name="Changes" comment="comparison of models">
+      <change beforePath="$PROJECT_DIR$/QualityOfSleep.py" beforeDir="false" afterPath="$PROJECT_DIR$/QualityOfSleep.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +138,55 @@
       <option name="project" value="LOCAL" />
       <updated>1737918728839</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="comparison of models">
+      <option name="closed" value="true" />
+      <created>1738926234851</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738926234851</updated>
+    </task>
+    <task id="LOCAL-00011" summary="comparison of models">
+      <option name="closed" value="true" />
+      <created>1738969058153</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738969058153</updated>
+    </task>
+    <task id="LOCAL-00012" summary="comparison of models">
+      <option name="closed" value="true" />
+      <created>1738969072306</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738969072306</updated>
+    </task>
+    <task id="LOCAL-00013" summary="comparison of models">
+      <option name="closed" value="true" />
+      <created>1739027842133</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1739027842134</updated>
+    </task>
+    <task id="LOCAL-00014" summary="comparison of models">
+      <option name="closed" value="true" />
+      <created>1739095915348</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1739095915348</updated>
+    </task>
+    <task id="LOCAL-00015" summary="comparison of models">
+      <option name="closed" value="true" />
+      <created>1739099318872</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1739099318872</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
