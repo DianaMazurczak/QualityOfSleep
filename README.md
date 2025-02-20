@@ -90,6 +90,8 @@ For the second model I add squared variables to also take into account the non-l
 
 ### Third model
 
+In the third and final model, the VIF (variance inflation factor) is also examined. This factor is used to identify the correlation between two, three, or more variables that is not apparent in the correlation matrix. This issue is named multicollinearity. The minimum value of vif is 1 and that's mean there is no collinearity. Acceptable value is less than 5-10 and in my work I created set of featers which vif was below 10.
+
 | Variable                        | Coef   | Std Err  | t       | P>abs(t)  |
 |---------------------------------|--------|----------|---------|-------|
 | Intercept                       | 8.4787 | 0.149000 | 56.849  | 0.000 |
@@ -117,16 +119,28 @@ The first component is influenced primarily by variables: Sleep Duration, Age, a
 ## Machine Learning
 
 ### SVM
+
+One-vs-one
 ![figure3](Figure3.png)
+The biggest difference between accurancy is in gamma parameters. Small values have accurancy arround 0.6-0.7. In comparison the highest accurancy for 0.05 is euqal 0.94. Similar situation is in case of C parametr, because for higher value there is better accurancy. In contrast, in the case of the kerenl, different parameters have quite similar results, but polynomial kernel have definitely the worst results, even changing the degree does not help.
+
+One-vs-rest
 ![figure4](Figure4.png)
+The conclusions drawn in this study bear a strong resemblance to those previously outlined in the extant literature. For the C and gamma parameters, it was demonstrated that an increase in value resulted in a corresponding improvement in outcome. Also, the polynomial model obtained the worst results in terms of the kernel parameter. I supposed bigger difference in time between one-vs-one and one-vs-rest models, but probably dataset is too small to see the difference.In summary, the SVM models attained an accuracy and an f1 score of 96%.
 
 ### Random Forest
 ![figure5](Figure5.png)
+![figure7](Figure7.png)
+
+At the depth of tree euqal 5 there is no improvment in train and test data. 
+At the depth of tree euqal 8 model is overfitted, because accurancy and F1 Score is getting worst.
 
 ### KNN
+The numbers of neighbors that give the best accuracy are equal to one. This method is called "Nearest Neighbors" because it only considers one point.
 ![figure6](Figure6.png)
 
 ## Model comparison
+The best results are from a machine learning model, particular - Random Forest. It has an accuracy and an F1 score of 98%, which is a very good score.
 
 <table>
   <thead>
