@@ -1,9 +1,9 @@
-# Predicting Quality of Sleep
+# :zzz: Predicting Quality of Sleep
 
-## Purpose of the work
+## :pushpin: Purpose of the work
 In my work I would like to compare a Multiple Linear Regression with Machine Learning models like K-Nearest Neighbors, Support Vector Machines and Random Forest.
 
-## EDA - Exploratory data analysis
+## :small_blue_diamond: EDA - Exploratory data analysis
 
 The dateset contains 12 columns and 374 columns. The initial five rows are printed below. It can be observed that the column designated *Sleep Disorder* contains NaN values. However, upon printing the unique values for this column, it can be concluded that the individual in question does not suffer from a sleep disorder. The remaining columns do not exhibit any instances of missing data. The second issue is the presentation of the blood pressure data, which is currently presented in a single column and has the data type object. It would be more appropriate to split this data into two columns, one for systolic and one for diastolic blood pressure, with the data types integer for both.
 
@@ -27,9 +27,9 @@ Prior to the construction of a model, an investigation into the correlation matr
 
 The most significant influence on sleep quality is stress level and heart rate. A reduction in stress levels or heart rate is associated with an improvement in sleep quality. In the case of regression, a correlation below 60% is optimal, whereas in the case of clustering or PCA, a high correlation is advantageous. Among all occupations, engineers are observed to have the best quality of sleep, while salespersons and doctors are found to have the poorest. As previously stated, a value of "None" indicates that the individual does not have a sleep disorder. This variable has a strong negative correlation with blood pressure variables and BMI category. This suggests that individuals with the lowest blood pressure and those with a lower BMI are more likely to not have a sleep disorder.
 
-## Multiple reggresion models
+## :small_blue_diamond: Multiple reggresion models
 
-### First model
+### :small_blue_diamond: First model
 
 In the first model I add four interaction terms:
 * Heart Rate * Sleep Duration
@@ -58,7 +58,7 @@ In the first model I add four interaction terms:
 | Diastolic:Systolic                  | 0.002100   | 1.000000e-03  | 4.291   | 0.000 |
 
 
-### Second model
+### :small_blue_diamond: Second model
 
 For the second model I add squared variables to also take into account the non-linear correlation between the data.
 
@@ -88,7 +88,7 @@ For the second model I add squared variables to also take into account the non-l
 | Diastolic²                          | 0.127900   | 1.100000e-02  | 11.492  | 0.000 |
 
 
-### Third model
+### :small_blue_diamond: Third model
 
 In the third and final model, the VIF (variance inflation factor) is also examined. This factor is used to identify the correlation between two, three, or more variables that is not apparent in the correlation matrix. This issue is named multicollinearity. The minimum value of vif is 1 and that's mean there is no collinearity. Acceptable value is less than 5-10 and in my work I created set of featers which vif was below 10.
 
@@ -104,7 +104,7 @@ In the third and final model, the VIF (variance inflation factor) is also examin
 | Age²                            | 0.0007 | 0.000041 | 16.325  | 0.000 |
 
 
-### Model based on PCA variables
+### :small_blue_diamond: Model based on PCA variables
 
 The first component is influenced primarily by variables: Sleep Duration, Age, and Manager. The second component exhibits a significant impact from the variables Scientist and Accountant, in addition to Sleep Duration. The third component is also influenced by Sleep Duration, along with the variables Teacher and Software Engineer. Three variables: 'None' (indicating the absence of sleep disorders), 'Sleep Apnea', and 'BMI Category', do not have any influence on the first six components.
 
@@ -116,30 +116,36 @@ The first component is influenced primarily by variables: Sleep Duration, Age, a
 | PCA3      | 0.0358  | 0.012   | 3.064   | 0.002 |
 | PCA4      | -0.1813 | 0.014   | -13.270 | 0.000 |
 
-## Machine Learning
+## :small_blue_diamond: Machine Learning
 
-### SVM
+### :small_blue_diamond: SVM
 
 One-vs-one
+
 ![figure3](Figure3.png)
+
 The biggest difference between accurancy is in gamma parameters. Small values have accurancy arround 0.6-0.7. In comparison the highest accurancy for 0.05 is euqal 0.94. Similar situation is in case of C parametr, because for higher value there is better accurancy. In contrast, in the case of the kerenl, different parameters have quite similar results, but polynomial kernel have definitely the worst results, even changing the degree does not help.
 
 One-vs-rest
+
 ![figure4](Figure4.png)
+
 The conclusions drawn in this study bear a strong resemblance to those previously outlined in the extant literature. For the C and gamma parameters, it was demonstrated that an increase in value resulted in a corresponding improvement in outcome. Also, the polynomial model obtained the worst results in terms of the kernel parameter. I supposed bigger difference in time between one-vs-one and one-vs-rest models, but probably dataset is too small to see the difference.In summary, the SVM models attained an accuracy and an f1 score of 96%.
 
-### Random Forest
+### :small_blue_diamond: Random Forest
+
 ![figure5](Figure5.png)
 ![figure7](Figure7.png)
 
 At the depth of tree euqal 5 there is no improvment in train and test data. 
 At the depth of tree euqal 8 model is overfitted, because accurancy and F1 Score is getting worst.
 
-### KNN
+### :small_blue_diamond: KNN
 The numbers of neighbors that give the best accuracy are equal to one. This method is called "Nearest Neighbors" because it only considers one point.
+
 ![figure6](Figure6.png)
 
-## Model comparison
+## :small_blue_diamond: Model comparison
 The best results are from a machine learning model, particular - Random Forest. It has an accuracy and an F1 score of 98%, which is a very good score.
 
 <table>
