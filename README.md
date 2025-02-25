@@ -5,7 +5,7 @@ In my work I would like to compare a Multiple Linear Regression with Machine Lea
 
 ## :small_blue_diamond: EDA - Exploratory data analysis
 
-The dateset contains 12 columns and 374 columns. The initial five rows are printed below. It can be observed that the column designated *Sleep Disorder* contains NaN values. However, upon printing the unique values for this column, it can be concluded that the individual in question does not suffer from a sleep disorder. The remaining columns do not exhibit any instances of missing data. The second issue is the presentation of the blood pressure data, which is currently presented in a single column and has the data type object. It would be more appropriate to split this data into two columns, one for systolic and one for diastolic blood pressure, with the data types integer for both.
+The dateset contains 12 columns and 374 columns. Column designated *Sleep Disorder* contains NaN values, however, upon printing the unique values for this column, it can be concluded that the individual in question does not suffer from a sleep disorder. The remaining columns do not exhibit any instances of missing data. The second issue is the presentation of the blood pressure data, which is currently presented in a single column and has the data type object. It would be more appropriate to split this data into two columns, one for systolic and one for diastolic blood pressure, with the data types integer for both.
 
 | Column                             | Data Type      | Description                                                                 |
 |------------------------------------|----------------|-----------------------------------------------------------------------------|
